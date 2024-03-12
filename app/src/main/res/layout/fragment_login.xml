@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias=".22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="@string/email"
+            android:singleLine="true"
+            android:layout_marginHorizontal="28dp"
+            android:paddingHorizontal="16dp"
+            android:textColorHint="@color/eerie_black"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/cultured"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title" />
+    <!--    app:passwordToggleDrawable="@drawable/show_password_selector"-->
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:hintEnabled="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="28dp"
+            app:layout_constraintTop_toBottomOf="@id/edt_email">
+
+        <android.widget.EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_shape"
+                android:singleLine="true"
+                android:backgroundTint="@color/cultured"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:paddingHorizontal="16dp"
+                android:textColorHint="@color/eerie_black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/black"
+            android:text="@string/log_in"
+            android:layout_marginHorizontal="28dp"
+            android:paddingVertical="20dp"
+            android:textColor="@color/cultured"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/til_Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="28dp"
+            android:paddingVertical="20dp"
+            android:textColor="@color/eerie_black"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/pale_silver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/forgot_password"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup" />
+
+    <include
+            layout="@layout/loader_layout"
+            style="@style/loaderUI"
+            android:visibility="gone"
+            android:id="@+id/include_loader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

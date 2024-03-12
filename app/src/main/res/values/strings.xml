@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Swift Market</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="request_reset">REQUEST RESET</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="email_value">Email: %s</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_cart">Cart 👍</string>
+    <string name="add_cart">Add to Cart</string>
+    <string name="cart_menu">Cart</string>
+    <string name="menu_logout">Logout</string>
+    <string name="_1_32">1.32</string>
+    <string name="by_weight_1_32_kg">by weight $1.32 kg</string>
+    <string name="banana">Banana</string>
+    <string name="buy_now">Buy now</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="product_details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in posuere dui. In hac habitasse platea dictumst. Morbi vitae tincidunt leo. Etiam id libero at turpis mollis posuere consectetur.</string>
+    <string name="dollar">$</string>
+    <string name="dollar_value">$ %s</string>
+    <string name="rupee">₹</string>
+    <string name="total">Total</string>
+    <string name="total_price">0</string>
+    <string name="rupee_value">₹ %S1000</string>
+    <string name="orange_juice">Orange Juice</string>
+    <string name="lauren_s">Lauren`s</string>
+    <string name="todo">item_image</string>
+    <string name="includeing_gst_18">includeing GST(18%)</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_number_hint">3454 4554 3433 5453</string>
+    <string name="cardholder_name">Cardholder name</string>
+    <string name="christie_doe">Christie Doe</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="expiry_date_hint">09 /2023</string>
+    <string name="cvv_cvc">cvv_cvc</string>
+    <string name="cvv_cvc_number">977</string>
+    <string name="success_payment">We will send you an order details to your email after the successfull payment</string>
+    <string name="pay_for_the_order">🔒  Pay for the order</string>
+    <string name="payment_success_yayy">Payment Success, Yayy!</string>
+    <string name="success_payment_de">we will send order details and invoice in your contact no. and registered email</string>
+    <string name="give_the_rating_for_our_service">Give the rating for our service</string>
+    <string name="add_products">Add Products</string>
+    <string name="update_products">Update Products</string>
+    <string name="update_product">Update Product</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="product_name">product name</string>
+    <string name="product_name_item">Product name</string>
+    <string name="product_description">Product description</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="category">Category</string>
+    <string name="add_product">Add Product</string>
+    <string name="products">After add the product you will need to remove from firebase</string>
+    <string name="item_price">$ 99999999</string>
+    <string name="item_search">Search</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="registration_successful">Sign successful!</string>
+    <string name="please_check_gmail_successful_sent_mail">Please check Gmail successful! sent mail</string>
+    <string name="add_product_successfully">Add Product successfully</string>
+    <string name="please_enter_value">Please Enter value</string>
+    <string name="missing_field">MissingField: all fields required</string>
+    <string name="hit_uantity">20</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="listarray" >
+        <item>Select One</item>
+        <item>Item One</item>
+        <item>Item Two</item>
+        <item>Item Three</item>
+    </string>
+    <string name="not_data_found">No Data Found</string>
+    <string name="_1">1</string>
+    <string name="develop_by">Developed By</string>
+    <string name="about_us">About Us</string>
+    <string name="ritik_gawe">Ritik Gaur</string>
+    <string name="ritik_gawe_id">8895713</string>
+    <string name="sampath_reddy_nagirthi">Sampath Reddy Nagirthi</string>
+    <string name="sam_id">8902262</string>
+    <string name="shobhna">Shobhna verma</string>
+    <string name="shobhna_id">8908208</string>
+    <string name="vimal">Vimal varkey</string>
+    <string name="vimal_id">8884356</string>
+    <string name="are_you_sure_you_want_to_proceed">Are you sure you want to proceed?</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="product_update_successfully">Product update successfully</string>
+    <string name="product_delete_successfully">Product delete successfully</string>
+    <string-array name="product_categories">
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Home &amp; Kitchen</item>
+        <item>Sports &amp; Outdoors</item>
+        <item>Beauty &amp; Personal Care</item>
+        <item>Books</item>
+        <item>Toys &amp; Games</item>
+        <item>Health &amp; Wellness</item>
+        <item>Furniture</item>
+        <item>Automotive</item>
+        <item>Jewelry &amp; Accessories</item>
+        <item>Pet Supplies</item>
+        <item>Office Supplies</item>
+        <item>Groceries</item>
+        <item>Baby &amp; Kids</item>
+        <item>Tools &amp; Home Improvement</item>
+        <item>Outdoor Living</item>
+        <item>Fitness &amp; Exercise</item>
+        <item>Arts &amp; Crafts</item>
+        <item>Musical Instruments</item>
+    </string-array>
+</resources>

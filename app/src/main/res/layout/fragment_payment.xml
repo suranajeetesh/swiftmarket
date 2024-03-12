@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/shape_btn_back"
+                    android:paddingVertical="18dp"
+                    android:paddingHorizontal="22dp"
+                    app:srcCompat="@drawable/ic_btn_back" />
+
+            <TextView
+                    android:id="@+id/txt_rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:text="@string/rupee"
+                    android:layout_marginStart="223dp"
+                    android:includeFontPadding="false"
+                    android:layout_marginVertical="10dp"
+                    app:layout_constraintStart_toEndOf="@id/btn_back"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+            <TextView
+                    android:id="@+id/txt_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="@string/total_price"
+                    android:includeFontPadding="false"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginVertical="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+            <TextView
+                    android:id="@+id/txt_gst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:text="@string/includeing_gst_18"
+                    android:includeFontPadding="false"
+                    app:layout_constraintTop_toBottomOf="@id/txt_number"
+                    app:layout_constraintEnd_toEndOf="@id/txt_number" />
+
+            <TextView
+                    android:id="@+id/txt_checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proceed_to_checkout"
+                    android:textSize="22sp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+            <TextView
+                    android:id="@+id/txt_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/card_number"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_checkout" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/edt_bg_payment"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="16dp"
+                    android:inputType="number"
+                    android:layout_marginTop="3dp"
+                    android:maxLength="16"
+                    android:backgroundTint="@color/cultured"
+                    android:hint="@string/card_number_hint"
+                    app:layout_constraintTop_toBottomOf="@id/txt_card_number"
+                    android:textColorHint="#546E7A"
+                    tools:layout_editor_absoluteX="20dp" />
+
+            <TextView
+                    android:id="@+id/txt_holder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/cardholder_name"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_card_number" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/edt_bg_payment"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:backgroundTint="@color/cultured"
+                    android:hint="@string/christie_doe"
+                    app:layout_constraintTop_toBottomOf="@id/txt_holder_name"
+                    android:textColorHint="#546E7A"
+                    tools:layout_editor_absoluteX="20dp" />
+
+            <TextView
+                    android:id="@+id/txt_expiry_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/expiry_date"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_holder_name" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_expiry_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:background="@drawable/edt_bg_payment"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/cultured"
+                    android:singleLine="true"
+                    android:hint="@string/expiry_date_hint"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="@id/txt_expiry_date"
+                    app:layout_constraintTop_toBottomOf="@id/txt_expiry_date"
+                    android:textColorHint="#546E7A" />
+
+            <TextView
+                    android:id="@+id/txt_cvv_cvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/cvv_cvc"
+                    android:layout_marginStart="223dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/edt_expiry_date"
+                    app:layout_constraintTop_toBottomOf="@id/edt_holder_name" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_cvv_cvc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_bg_payment"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/cultured"
+                    android:hint="@string/cvv_cvc_number"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    app:layout_constraintStart_toStartOf="@id/txt_cvv_cvc"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cvv_cvc"
+                    android:textColorHint="#546E7A" />
+
+            <TextView
+                    android:id="@+id/txt_success_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:text="@string/success_payment"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_expiry_date"
+                    android:layout_marginTop="36dp" />
+
+            <TextView
+                    android:id="@+id/btn_proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:background="@drawable/edt_bg_payment"
+                    android:text="@string/pay_for_the_order"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_success_payment"
+                    tools:layout_editor_absoluteX="20dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

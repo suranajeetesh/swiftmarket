@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#1A000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pale_silver">#B8C8C4B7</color>
+    <color name="cultured">#F5F4F2</color>
+    <color name="eerie_black">#241C1C</color>
+    <color name="bright_gray">#EFEFEF</color>
+    <color name="gray_x11">#BDBDBD</color>
+    <color name="ufo_green">#25D482</color>
+    <color name="loader_bg">#33000000</color>
+    <color name="ghost_white">#F8F8FB</color>
+
+</resources>

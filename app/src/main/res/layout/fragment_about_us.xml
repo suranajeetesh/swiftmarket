@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/fragmentClickable"
+        android:background="@android:color/white">
+
+    <View
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1AEA80FC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_background"
+            android:scaleType="centerCrop" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_about"
+            android:layout_width="wrap_content"
+            android:layout_height="402dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_about_us"
+            app:srcCompat="@drawable/ic_about" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/shape_btn_back"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="22dp"
+            app:srcCompat="@drawable/ic_btn_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            style="@style/aboutUsTitle"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_developed_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/develop_by"
+            android:layout_marginTop="10dp"
+            style="@style/aboutUsTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_about" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_ritik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ritik_gawe"
+            android:layout_marginTop="20dp"
+            style="@style/aboutUs"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_developed_by" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_ritik_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ritik_gawe_id"
+            style="@style/aboutUs"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_ritik"
+            app:layout_constraintBottom_toBottomOf="@id/txt_ritik" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_sampath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sampath_reddy_nagirthi"
+            android:layout_marginTop="20dp"
+            style="@style/aboutUs"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_ritik" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_sampath_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sam_id"
+            style="@style/aboutUs"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_sampath"
+            app:layout_constraintBottom_toBottomOf="@id/txt_sampath" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_shobhna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shobhna"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            style="@style/aboutUs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_sampath" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_shobhna_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.85"
+            android:text="@string/shobhna_id"
+            style="@style/aboutUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@id/txt_shobhna"
+            app:layout_constraintBottom_toBottomOf="@id/txt_shobhna" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_vimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vimal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            style="@style/aboutUs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_shobhna_id" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_vimal_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.85"
+            android:text="@string/vimal_id"
+            style="@style/aboutUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@id/txt_vimal"
+            app:layout_constraintBottom_toBottomOf="@id/txt_vimal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

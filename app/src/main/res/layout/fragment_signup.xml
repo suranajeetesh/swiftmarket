@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+            <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias=".22"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_profile_holder"
+                    android:layout_marginHorizontal="28dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginTop="25dp"
+                    app:civ_border_color="@color/eerie_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+            <android.widget.EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:layout_marginHorizontal="28dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingHorizontal="16dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/eerie_black"
+                    android:background="@drawable/btn_shape"
+                    android:backgroundTint="@color/cultured"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+            <android.widget.EditText
+                    android:id="@+id/edt_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_shape"
+                    android:backgroundTint="@color/cultured"
+                    android:hint="@string/password"
+                    android:paddingHorizontal="16dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/eerie_black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_email"
+                    android:fontFamily="@font/roboto" />
+
+            <android.widget.Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/btn_shape"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/sign_up"
+                    android:layout_marginHorizontal="28dp"
+                    android:paddingVertical="20dp"
+                    android:textColor="@color/cultured"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@+id/edt_Password"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            <android.widget.Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_in"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginHorizontal="28dp"
+                    android:paddingVertical="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/eerie_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    android:background="@drawable/btn_shape"
+                    android:backgroundTint="@color/pale_silver"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_signup" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/shape_btn_back"
+                    android:paddingVertical="18dp"
+                    android:paddingHorizontal="22dp"
+                    app:srcCompat="@drawable/ic_btn_back" />
+
+            <include
+                    layout="@layout/loader_layout"
+                    style="@style/loaderUI"
+                    android:visibility="gone"
+                    android:id="@+id/include_loader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
